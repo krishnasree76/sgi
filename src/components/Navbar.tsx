@@ -101,7 +101,7 @@ const Navbar = () => {
           {/* LOGO */}
           <a href="#home" className="flex items-center gap-2 group">
             <span className="font-bold text-xl tracking-tight text-slate-900">
-              SGI <span className="text-blue-800 font-semibold italic">Logistics</span>
+              Sri Ganesh Integrated <span className="text-blue-800 font-semibold italic">Logistics</span>
             </span>
           </a>
 

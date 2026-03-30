@@ -12,7 +12,7 @@ const Footer = () => (
     <div className="container mx-auto px-4 lg:px-8">
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-primary-foreground/80">
         <div>
-          <h3 className="font-heading font-bold text-primary-foreground text-lg mb-3">SGI Logistics</h3>
+          <h3 className="font-heading font-bold text-primary-foreground text-lg mb-3">Sri Ganesh Integrated Logistics</h3>
           <p className="text-sm leading-relaxed">Integrated logistics solutions with 25+ years of expertise. Moving your business forward, every day.</p>
         </div>
         <div>

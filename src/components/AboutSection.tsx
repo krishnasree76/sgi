@@ -64,10 +64,10 @@ const AboutSection = () => (
         <motion.div variants={fadeIn} initial="hidden" whileInView="visible" viewport={{ once: true }}>
           <p className="text-sm font-semibold uppercase tracking-wider text-accent mb-3">Who We Are</p>
           <h2 className="text-3xl sm:text-4xl font-heading font-extrabold text-foreground mb-6">
-            About <span className="text-steel">SGI Logistics</span>
+            About <span className="text-steel">Sri Ganesh Integrated Logistics</span>
           </h2>
           <p className="text-muted-foreground leading-relaxed text-lg">
-            With over 25 years of industry expertise, SGI Logistics provides complete logistics solutions tailored to your business needs. From standard shipments to temperature-controlled reefer containers, we ensure seamless operations, faster transit times, and reliable delivery.
+            With over 25 years of industry expertise, Sri Ganesh Integrated Logistics provides complete logistics solutions tailored to your business needs. From standard shipments to temperature-controlled reefer containers, we ensure seamless operations, faster transit times, and reliable delivery.
           </p>
 
           {/* New Stats Grid Integration */}
