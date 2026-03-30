@@ -243,9 +243,9 @@ const LogisticsHero = () => {
             <span className="text-red-600">Solutions</span>
           </h1>
 
-          <p className="text-lg sm:text-xl text-slate-600 mb-8 max-w-2xl">
+          {/* <p className="text-lg sm:text-xl text-slate-600 mb-8 max-w-2xl">
             25+ Years of Expertise in Door-to-Door, Air, Ocean & Temperature-Controlled Logistics
-          </p>
+          </p> */}
 
           <div className="flex flex-wrap gap-4 mb-14">
             <a
