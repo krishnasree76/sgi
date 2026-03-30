@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 20% 98%;
+    --foreground: 210 40% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 40% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 40% 11%;
+
+    --primary: 207 44% 36%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 207 25% 92%;
+    --secondary-foreground: 207 44% 26%;
+
+    --muted: 210 20% 96%;
+    --muted-foreground: 210 15% 46%;
+
+    --accent: 0 72% 51%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 210 20% 90%;
+    --input: 210 20% 90%;
+    --ring: 207 44% 36%;
+
+    --radius: 0.75rem;
+
+    --steel: 207 44% 36%;
+    --steel-dark: 207 50% 22%;
+    --steel-light: 207 30% 60%;
+    --red-brand: 0 72% 51%;
+    --red-brand-dark: 0 72% 42%;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .gradient-steel {
+    background: linear-gradient(135deg, hsl(207 50% 22%), hsl(207 44% 36%));
+  }
+  .gradient-hero-overlay {
+    background: linear-gradient(180deg, hsla(207, 50%, 10%, 0.85) 0%, hsla(207, 50%, 15%, 0.7) 50%, hsla(207, 50%, 10%, 0.85) 100%);
+  }
+  .text-gradient-steel {
+    background: linear-gradient(135deg, hsl(207 44% 36%), hsl(207 30% 60%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .shadow-card {
+    box-shadow: 0 4px 24px -4px hsla(207, 44%, 36%, 0.1);
+  }
+  .shadow-card-hover {
+    box-shadow: 0 12px 40px -8px hsla(207, 44%, 36%, 0.18);
+  }
+}
+
+@keyframes wa-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 hsla(142, 70%, 45%, 0.5); }
+  50% { box-shadow: 0 0 0 14px hsla(142, 70%, 45%, 0); }
+}
+.animate-wa-pulse {
+  animation: wa-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
