@@ -3,11 +3,11 @@ import { Clock, Globe, Award } from "lucide-react";
 import BlurTextAnimation from "@/components/ui/blur-text-animation";
 import heroImg from "@/assets/hero-logistics.jpg";
 
-const stats = [
-  { icon: Award, label: "25+ Years", desc: "Experience" },
-  { icon: Clock, label: "24/7", desc: "Service" },
-  { icon: Globe, label: "Global", desc: "Coverage" },
-];
+// const stats = [
+//   { icon: Award, label: "25+ Years", desc: "Experience" },
+//   { icon: Clock, label: "24/7", desc: "Service" },
+//   { icon: Globe, label: "Global", desc: "Coverage" },
+// ];
 
 const HeroSection = () => (
   <section id="home" className="relative min-h-screen flex items-center pt-16">
@@ -60,7 +60,7 @@ const HeroSection = () => (
       </motion.div>
 
       {/* STATS */}
-      <motion.div
+      {/* <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, delay: 0.3 }}
@@ -76,7 +76,7 @@ const HeroSection = () => (
             <p className="text-white/70 text-sm">{desc}</p>
           </div>
         ))}
-      </motion.div>
+      </motion.div> */}
 
     </div>
   </section>
